@@ -1,9 +1,12 @@
 import styled from 'styled-components'
 
 import Beans from "../components/beans/beans"
-import {SearchPanel} from "../components/search-panel/Search-panel"
 import {ItemsList} from "../components/itemsList/itemsList"
 import {FirstSection} from "../styles/FirstSection"
+
+const FirstSectionRestyled = styled(FirstSection)`
+  background-position: 50% 37%;
+`
 
 const AboutOurBeans = styled.section`
   position: relative;
@@ -48,22 +51,22 @@ const AboutOurBeans = styled.section`
 `
 
 const ItemsSection = styled.section`
-  padding: 60px 20px 80px;
+  padding: 0 20px 40px;
 `
 
-const OurCoffee = ({coffeeItems, onTypeChange, onInputSearch, ...props}) => {
+const ForYourPleasure = ({coffeeItems, ...props}) => {
     return (<>
-        <FirstSection img={require('../img/our-coffee-bg.jpg')}>
-            <h1>Our Coffee</h1>
-        </FirstSection>
+        <FirstSectionRestyled img={require('../img/for-your-pleasure-bg.jpg')}>
+            <h1>For your pleasure</h1>
+        </FirstSectionRestyled>
         <AboutOurBeans>
             <img
-                src={require('../img/our-coffee-woman.jpg')}
+                src={require('../img/about-our-goods.jpg')}
                 width="272"
                 height="358"
                 alt="Женщина пьёт кофе"/>
             <div className="text-wrapper">
-                <h3>About our beans</h3>
+                <h3>About our goods</h3>
                 <Beans color="var(--main-color-text)"/>
                 <p>
                     Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
@@ -78,12 +81,9 @@ const OurCoffee = ({coffeeItems, onTypeChange, onInputSearch, ...props}) => {
             </div>
         </AboutOurBeans>
         <ItemsSection>
-            <SearchPanel
-                onInputSearch={onInputSearch}
-                onTypeChange={onTypeChange}/>
             <ItemsList coffeeItems={coffeeItems}/>
         </ItemsSection>
     </>)
 }
 
-export default OurCoffee
+export default ForYourPleasure

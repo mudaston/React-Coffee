@@ -6,7 +6,7 @@ const FirstSection = styled.div`
 
   padding-top: 160px;
   min-height: 300px;
-  background: url(${require('../img/our-coffee-bg.jpg')}) center 100% / cover no-repeat;
+  background: url(${({img}) => img}) center 100% / cover no-repeat;
   color: var(--main-color-background);
 
   h1 {

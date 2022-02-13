@@ -148,4 +148,4 @@ const Home = () => {
     </>);
 }
 
-export {Home}
+export default Home

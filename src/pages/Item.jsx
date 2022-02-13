@@ -1,9 +1,9 @@
 import styled from "styled-components"
 import {useParams} from "react-router"
 
-import {FirstSection} from "../../styles/FirstSection"
-import {HeadingPlusBeans} from "../headingPlusBeans/headingPlusBeans"
-import {device} from "../media queries/MediaQueries"
+import {FirstSection} from "../styles/FirstSection"
+import {HeadingPlusBeans} from "../components/headingPlusBeans/headingPlusBeans"
+import {device} from "../components/media queries/MediaQueries"
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,6 +14,11 @@ const Wrapper = styled.div`
 
   max-width: 890px;
   margin: 70px auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 
   .text-wrapper {
     max-width: 420px;
@@ -54,11 +59,13 @@ const Item = ({coffeeItems, ...props}) => {
     const {fullImg, description, fullDescr, location, price} = coffeeItems.find((item) => item.id.toString() === id)
 
     return (<>
-        <FirstSection>
+        <FirstSection img={require('../img/our-coffee-bg.jpg')}>
             <h1>{description}</h1>
         </FirstSection>
         <Wrapper>
-            <img src={fullImg} alt="Some item"/>
+            <div className="img-wrapper">
+                <img src={fullImg} alt="Some item"/>
+            </div>
             <div className="text-wrapper">
                 <HeadingPlusBeans
                     text="About it"
@@ -71,4 +78,4 @@ const Item = ({coffeeItems, ...props}) => {
     </>)
 }
 
-export {Item}
+export default Item

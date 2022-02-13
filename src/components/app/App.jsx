@@ -1,15 +1,26 @@
 import {Routes, Route, Navigate} from 'react-router-dom'
-import {Component} from "react"
+import {lazy, Suspense, Component} from "react"
+import styled from "styled-components"
 
+import {Loader} from "../../pages/Loader"
 import {Header} from "../header/header"
 import {Footer} from "../footer/footer"
-import {NotFoundPage} from '../../pages/NotFoundPage'
-import {Home} from "../../pages/Home"
-import {OurCoffee} from '../../pages/OurCoffee'
-import {Item} from "../item/Item"
 
 import img from '../../img/1.jpg'
 import fullImg from '../../img/full-image.jpg'
+
+const Home            = lazy(() => import('../../pages/Home'))
+const Item            = lazy(() => import('../../pages/Item'))
+const OurCoffee       = lazy(() => import('../../pages/OurCoffee'))
+const ForYourPleasure = lazy(() => import('../../pages/ForYourPleasure'))
+const NotFoundPage    = lazy(() => import('../../pages/NotFoundPage'))
+
+const Page = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
 class App extends Component {
     constructor(props) {
@@ -80,7 +91,7 @@ class App extends Component {
     onTypeChange = (value) => {
         this.setState((state) => ({
             ...state,
-            type: value
+            type: value === state.type ? '' : value
         }))
     }
 
@@ -111,30 +122,38 @@ class App extends Component {
     }
 
     render() {
+
         const {coffeeItems, type, search} = this.state
         const filteredArray               = this.filterArray(this.onButtonChoice(coffeeItems, type), search)
 
         return (<>
-            <Header/>
-            <main>
-                <Routes>
-                    <Route path="/" element={<Navigate to="/coffee-house"/>}/>
-                    <Route path="/coffee-house" element={<Home/>}/>
-                    <Route path="/our-coffee" element={<OurCoffee
-                        coffeeItems={filteredArray}
-                        onInputSearch={this.onInputSearch}
-                        onTypeChange={this.onTypeChange}/>}/>
-                    <Route
-                        path="/item/:id"
-                        element={<Item
-                            coffeeItems={coffeeItems}/>}/>
-                    <Route path="*" element={<NotFoundPage/>}/>
-                </Routes>
-            </main>
-            <Footer/>
+            <Suspense fallback={<Loader/>}>
+                <Page>
+                    <Header/>
+                    <main>
+                        <Routes>
+                            <Route path="/" element={<Navigate to="/coffee-house"/>}/>
+                            <Route path="/coffee-house" element={<Home/>}/>
+                            <Route path="/our-coffee" element={<OurCoffee
+                                coffeeItems={filteredArray}
+                                onInputSearch={this.onInputSearch}
+                                onTypeChange={this.onTypeChange}/>}/>
+                            <Route path="/for-your-pleasure"
+                                   element={
+                                       <ForYourPleasure
+                                           coffeeItems={coffeeItems}/>}/>
+                            <Route
+                                path="/item/:id"
+                                element={<Item
+                                    coffeeItems={coffeeItems}/>}/>
+                            <Route path="*" element={<NotFoundPage/>}/>
+                        </Routes>
+                    </main>
+                    <Footer/>
+                </Page>
+            </Suspense>
         </>)
     }
-
 }
 
 export {App}

@@ -2,11 +2,11 @@ import styled from "styled-components"
 
 const FooterStyle = styled.footer`
   height: 150px;
-  position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
   z-index: 999;
+  margin-top: auto;
 
   .wrapper {
     display: flex;
@@ -15,10 +15,10 @@ const FooterStyle = styled.footer`
     flex-direction: column;
     width: 1620px;
   }
-  
+
   div:not(.wrapper) {
     margin-top: 20px;
-    
+
     span {
       font-size: 2.25rem;
     }
