@@ -4,6 +4,7 @@ export const ItemStyle = styled.div`
   display: flex;
   flex-direction: column;
   width: 220px;
+  min-height: 240px;
   padding: 20px;
   font-size: .85rem;
   text-align: center;

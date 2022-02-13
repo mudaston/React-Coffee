@@ -7,6 +7,8 @@ const GoodItemStyle = styled(ItemStyle)`
   padding: 35px 20px 20px 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
   transition: box-shadow .3s ease;
+  min-height: 255px;
+  cursor: pointer;
   
   &:hover {
     box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.25);

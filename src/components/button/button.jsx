@@ -7,6 +7,7 @@ const ButtonBlock = styled.button`
   padding: ${({padding}) => padding};
   color: ${({color}) => color};
   transition: color .3s ease, background-color .3s ease;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .3));
 
   &:hover {
     color: #000;
