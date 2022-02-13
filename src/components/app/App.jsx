@@ -137,7 +137,8 @@ class App extends Component {
                             <Route path="/our-coffee" element={<OurCoffee
                                 coffeeItems={filteredArray}
                                 onInputSearch={this.onInputSearch}
-                                onTypeChange={this.onTypeChange}/>}/>
+                                onTypeChange={this.onTypeChange}
+                                search={search}/>}/>
                             <Route path="/for-your-pleasure"
                                    element={
                                        <ForYourPleasure

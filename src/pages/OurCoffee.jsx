@@ -51,7 +51,7 @@ const ItemsSection = styled.section`
   padding: 60px 20px 80px;
 `
 
-const OurCoffee = ({coffeeItems, onTypeChange, onInputSearch, ...props}) => {
+const OurCoffee = ({coffeeItems, onTypeChange, onInputSearch, search, ...props}) => {
     return (<>
         <FirstSection img={require('../img/our-coffee-bg.jpg')}>
             <h1>Our Coffee</h1>
@@ -80,7 +80,8 @@ const OurCoffee = ({coffeeItems, onTypeChange, onInputSearch, ...props}) => {
         <ItemsSection>
             <SearchPanel
                 onInputSearch={onInputSearch}
-                onTypeChange={onTypeChange}/>
+                onTypeChange={onTypeChange}
+                search={search}/>
             <ItemsList coffeeItems={coffeeItems}/>
         </ItemsSection>
     </>)

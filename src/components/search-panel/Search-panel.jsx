@@ -3,25 +3,13 @@ import {SearchPanelStyle} from "../../styles/Search-panel"
 import {Component} from "react"
 
 class SearchPanel extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            search: ''
-        }
-    }
-
     onSearchChange = (e) => {
         const value = e.target.value.toLowerCase()
-
-        this.setState((state) => ({
-            ...state,
-            search: value
-        }), this.props.onInputSearch(value))
+        this.props.onInputSearch(value)
     }
 
     render() {
-        const {onTypeChange} = this.props
+        const {search, onTypeChange} = this.props
 
         const buttonsData = [
             {name: 'brazil', value: 'Brazil'},
@@ -45,7 +33,7 @@ class SearchPanel extends Component {
                         type="search"
                         placeholder="start typing here..."
                         onChange={this.onSearchChange}
-                        value={this.state.search}/>
+                        value={search}/>
                 </label>
                 <div>
                     <span>Or filter</span>
