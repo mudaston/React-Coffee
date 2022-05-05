@@ -1,11 +1,16 @@
-import {SearchPanelStyle} from "../../styles/Search-panel"
-
 import {Component} from "react"
+
+import {SearchPanelStyle} from "../../styles/Search-panel"
 
 class SearchPanel extends Component {
     onSearchChange = (e) => {
         const value = e.target.value.toLowerCase()
         this.props.onInputSearch(value)
+    }
+
+    componentWillUnmount() {
+        this.props.onInputSearch('')
+        this.props.onTypeChange('')
     }
 
     render() {

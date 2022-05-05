@@ -1,5 +1,5 @@
-import {Routes, Route, Navigate} from 'react-router-dom'
-import {lazy, Suspense, Component} from "react"
+import {Navigate, Route, Routes} from 'react-router-dom'
+import {Component, lazy, Suspense} from "react"
 import styled from "styled-components"
 
 import {Loader} from "../../pages/Loader"
@@ -145,8 +145,9 @@ class App extends Component {
                                            coffeeItems={coffeeItems}/>}/>
                             <Route
                                 path="/item/:id"
-                                element={<Item
-                                    coffeeItems={coffeeItems}/>}/>
+                                element={
+                                    <Item coffeeItems={coffeeItems}/>
+                                }/>
                             <Route path="*" element={<NotFoundPage/>}/>
                         </Routes>
                     </main>
