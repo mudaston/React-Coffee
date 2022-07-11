@@ -1,7 +1,8 @@
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import { Component, lazy, Suspense } from 'react'
 
 import { coffeeItems } from './common'
+import { forYourPleasure, home, ourCoffee } from './helpers/addresses'
 
 import { Footer, Header, Loader } from './components/elements'
 
@@ -68,24 +69,27 @@ class App extends Component {
             <Header />
             <main>
               <Routes>
-                <Route path='/' element={<Navigate to='/coffee-house' />} />
-                <Route path='/coffee-house' element={<Home />} />
+                <Route path={home}>
+                  <Route index element={<Home />} />
+                </Route>
+                <Route path={ourCoffee}>
+                  <Route
+                    index
+                    element={
+                      <OurCoffee
+                        coffeeItems={filteredArray}
+                        onInputSearch={this.onInputSearch}
+                        onTypeChange={this.onTypeChange}
+                        search={search}
+                      />
+                    }
+                  />
+                  <Route path=':id' element={<Item coffeeItems={coffeeItems} />} />
+                </Route>
                 <Route
-                  path='/our-coffee'
-                  element={
-                    <OurCoffee
-                      coffeeItems={filteredArray}
-                      onInputSearch={this.onInputSearch}
-                      onTypeChange={this.onTypeChange}
-                      search={search}
-                    />
-                  }
-                />
-                <Route
-                  path='/for-your-pleasure'
+                  path={forYourPleasure}
                   element={<ForYourPleasure coffeeItems={coffeeItems} />}
                 />
-                <Route path='/item/:id' element={<Item coffeeItems={coffeeItems} />} />
                 <Route path='*' element={<NotFoundPage />} />
               </Routes>
             </main>

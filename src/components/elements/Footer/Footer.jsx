@@ -9,12 +9,12 @@ const Footer = (props) => {
     <Style>
       <div className='wrapper'>
         <nav>
-          <Link to='/coffee-house'>
+          <Link to='/'>
             <span className='icon-logo' />
           </Link>
           <ul>
             <li>
-              <NavLink to='/coffee-house'>Coffee House</NavLink>
+              <NavLink to='/'>Coffee House</NavLink>
             </li>
             <li>
               <NavLink to='/our-coffee'>Our Coffee</NavLink>

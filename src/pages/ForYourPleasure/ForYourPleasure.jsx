@@ -1,5 +1,5 @@
 import { Beans } from '../../components/elements'
-import { ItemsList } from '../../components'
+import { CoffeeList } from '../../components'
 
 import { theme } from '../../common'
 
@@ -33,7 +33,7 @@ const ForYourPleasure = ({ coffeeItems }) => {
         </div>
       </AboutOurBeans>
       <ItemsSection>
-        <ItemsList coffeeItems={coffeeItems} />
+        <CoffeeList coffeeItems={coffeeItems} />
       </ItemsSection>
     </>
   )

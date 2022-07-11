@@ -1,5 +1,5 @@
 import { Beans } from '../../components/elements'
-import { ItemsList, SearchPanel } from '../../components'
+import { CoffeeList, SearchPanel } from '../../components'
 import { FirstSection } from '../../styles/styled-components'
 import { AboutOurBeans } from './AboutOurBeans'
 import { ItemsSection } from './ItemsSection'
@@ -33,7 +33,7 @@ const OurCoffee = ({ coffeeItems, onTypeChange, onInputSearch, search, ...props 
       </AboutOurBeans>
       <ItemsSection>
         <SearchPanel onInputSearch={onInputSearch} onTypeChange={onTypeChange} search={search} />
-        <ItemsList coffeeItems={coffeeItems} />
+        <CoffeeList coffeeItems={coffeeItems} />
       </ItemsSection>
     </>
   )
