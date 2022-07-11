@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { device } from '../../common'
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -19,5 +20,11 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+  }
+
+  @media ${device.tablet} {
+    :root {
+      font-size: 14px;
+    }
   }
 `

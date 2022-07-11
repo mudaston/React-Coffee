@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { device } from '../../../common'
+
 export const Style = styled.footer`
   height: 150px;
   display: flex;
@@ -7,6 +9,8 @@ export const Style = styled.footer`
   width: 100%;
   z-index: 999;
   margin-top: auto;
+
+  padding: 0 0 20px;
 
   .wrapper {
     display: flex;
@@ -36,16 +40,23 @@ export const Style = styled.footer`
 
     list-style-type: none;
 
+    li {
+      display: flex;
+    }
+
     a {
+      width: 100%;
+
       padding: 20px;
-      transition: color .3s ease;
+
       font-size: 1.1rem;
+
+      transition: color 0.3s ease;
 
       &:hover {
         color: ${({ theme }) => theme.colors.hoverLinkDarken};
       }
     }
-
   }
 
   * {
@@ -69,6 +80,30 @@ export const Style = styled.footer`
       transform: translateX(-50%);
       height: 2px;
       background-color: ${({ theme }) => theme.colors.mainColorText};
+    }
+  }
+
+  @media ${device.tablet} {
+    height: auto;
+
+    nav {
+      height: auto;
+    }
+
+    a > span {
+      display: none;
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    ul > li {
+      text-align: center;
+    }
+
+    ul > li > a {
+      padding: 10px 15px;
     }
   }
 `
