@@ -1,19 +1,21 @@
-import React, {StrictMode} from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom'
+import React, { StrictMode } from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 
-import {App} from './components/app/App';
-import {Global} from "./styles/style";
+import { App } from './App'
+import { GlobalStyles, Theme } from './styles/styled-components'
 
-import './css/bootstrap-reboot.min.css'
-import './css/font.css'
+import './styles/css/bootstrap-reboot.min.css'
+import './styles/css/fonts.css'
 
 ReactDOM.render(
-    <StrictMode>
-        <BrowserRouter>
-            <App/>
-        </BrowserRouter>
-        <Global/>
-    </StrictMode>,
-    document.getElementById('coffee')
-);
+  <StrictMode>
+    <GlobalStyles />
+    <BrowserRouter>
+      <Theme>
+        <App />
+      </Theme>
+    </BrowserRouter>
+  </StrictMode>,
+  document.getElementById('coffee')
+)
