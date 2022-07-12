@@ -1,11 +1,12 @@
 # :coffee: React Coffee
 
-![Framework](https://img.shields.io/badge/React-17.0.2-61DAFB?style=flat-square&logo=React)
-![Library](https://img.shields.io/badge/React%20Router-6.2.1-CA4245?style=flat-square&logo=React%20Router)
-![Bundler](https://img.shields.io/badge/Webpack-5.68.0-8DD6F9?style=flat-square&logo=Webpack)
-![Library](https://img.shields.io/badge/Styled%20Components-5.3.3-DB7093?style=flat-square&logo=styled-components)
-![GitHub repo size](https://img.shields.io/github/repo-size/mudaston/React-Coffee?style=flat-square)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mudaston/React-coffee?style=flat-square)
+
+![Framework](https://img.shields.io/badge/React-17.0.2-61DAFB?style=for-the-badge&logo=React)
+![Library](https://img.shields.io/badge/React%20Router-6.2.1-CA4245?style=for-the-badge&logo=React%20Router)
+![Bundler](https://img.shields.io/badge/Webpack-5.68.0-8DD6F9?style=for-the-badge&logo=Webpack)
+![Library](https://img.shields.io/badge/Styled%20Components-5.3.3-DB7093?style=for-the-badge&logo=styled-components)
+![GitHub repo size](https://img.shields.io/github/repo-size/mudaston/React-Coffee?style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mudaston/React-coffee?style=for-the-badge)
 
 This project is a kind of coffee shop app.
 
