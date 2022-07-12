@@ -1,9 +1,9 @@
 # :coffee: React Coffee
 
-![Framework](https://badges.aleen42.com/src/react_flat_square.svg)
-![Library](https://badges.aleen42.com/src/react-router_flat_square.svg)
-![Bundler](https://badges.aleen42.com/src/webpack_flat_square.svg)
-![Library](https://img.shields.io/badge/styled%20components-5.3.3-palevioletred?style=flat-square)
+![Framework](https://img.shields.io/badge/React-17.0.2-61DAFB?style=flat-square&logo=React)
+![Library](https://img.shields.io/badge/React%20Router-6.2.1-CA4245?style=flat-square&logo=React%20Router)
+![Bundler](https://img.shields.io/badge/Webpack-5.68.0-8DD6F9?style=flat-square&logo=Webpack)
+![Library](https://img.shields.io/badge/Styled%20Components-5.3.3-DB7093?style=flat-square&logo=styled-components)
 ![GitHub repo size](https://img.shields.io/github/repo-size/mudaston/React-Coffee?style=flat-square)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mudaston/React-coffee?style=flat-square)
 
