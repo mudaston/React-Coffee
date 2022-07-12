@@ -15,9 +15,9 @@ This project is a kind of coffee shop app.
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/64277973/178553882-6f441a1a-6125-415d-8a82-be2c03917e80.png" />
-<img src="https://user-images.githubusercontent.com/64277973/178553721-c59abd7f-c311-46e5-99d6-b19a6e79b055.png" />
-<img src="https://user-images.githubusercontent.com/64277973/178554221-5300880e-a273-4b16-8e68-0366740d208d.png" />
+<img src="https://user-images.githubusercontent.com/64277973/178553882-6f441a1a-6125-415d-8a82-be2c03917e80.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/64277973/178553721-c59abd7f-c311-46e5-99d6-b19a6e79b055.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/64277973/178554221-5300880e-a273-4b16-8e68-0366740d208d.png" width="500"/>
 
 ## Installation
 
