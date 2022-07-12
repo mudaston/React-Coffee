@@ -5,7 +5,7 @@ import { Style } from './Style'
 const NotFoundPage = () => {
   return (
     <Style>
-      <h1>Страница не найдена!</h1>
+      <h1>Page not found!</h1>
       <Beans color='#ffffff' />
     </Style>
   )
