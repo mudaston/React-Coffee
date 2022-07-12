@@ -1,5 +1,7 @@
 import { useParams } from 'react-router'
 
+import { theme } from '../../common'
+
 import { FirstSection } from '../../styles/styled-components'
 import { HeadingPlusBeans } from '../../components/elements'
 import { Wrapper } from './Wrapper'
@@ -20,7 +22,7 @@ const AboutCoffee = ({ coffeeItems }) => {
           <img src={fullImg} alt='Some item' />
         </div>
         <div className='text-wrapper'>
-          <HeadingPlusBeans text='About it' color='var(--main-color-text)' />
+          <HeadingPlusBeans text='About it' color={theme.colors.mainColorText} />
           <p>
             <span>Country:</span> {location}
           </p>

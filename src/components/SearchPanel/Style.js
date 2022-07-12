@@ -61,9 +61,6 @@ export const Style = styled.form`
   @media ${device.laptop} {
     flex-direction: column;
     gap: 30px 0;
-  }
-
-  @media ${device.tablet} {
     align-items: center;
   }
 `

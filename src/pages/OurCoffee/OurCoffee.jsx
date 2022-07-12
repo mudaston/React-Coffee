@@ -1,3 +1,5 @@
+import { theme } from '../../common'
+
 import { Beans } from '../../components/elements'
 import { CoffeeList, SearchPanel } from '../../components'
 import { FirstSection } from '../../styles/styled-components'
@@ -19,7 +21,7 @@ const OurCoffee = ({ coffeeItems, onTypeChange, onInputSearch, search, ...props 
         />
         <div className='text-wrapper'>
           <h3>About our beans</h3>
-          <Beans color='var(--main-color-text)' />
+          <Beans color={theme.colors.mainColorText} />
           <p>
             Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
             <br />

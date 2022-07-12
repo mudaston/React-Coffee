@@ -3,14 +3,12 @@ import styled from 'styled-components'
 import { device } from '../../../common'
 
 export const Style = styled.footer`
-  height: 150px;
   display: flex;
   justify-content: center;
   width: 100%;
   z-index: 999;
-  margin-top: auto;
 
-  padding: 0 0 20px;
+  padding: 30px 0 20px;
 
   .wrapper {
     display: flex;
@@ -18,6 +16,13 @@ export const Style = styled.footer`
     align-items: center;
     flex-direction: column;
     width: 1620px;
+  }
+
+  .decoration {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
   }
 
   div:not(.wrapper) {
@@ -32,7 +37,7 @@ export const Style = styled.footer`
     display: flex;
     align-items: flex-end;
 
-    height: 50px;
+    height: auto;
   }
 
   ul {
@@ -85,10 +90,6 @@ export const Style = styled.footer`
 
   @media ${device.tablet} {
     height: auto;
-
-    nav {
-      height: auto;
-    }
 
     a > span {
       display: none;

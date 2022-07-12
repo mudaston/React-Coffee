@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { device } from '../../common'
+
 export const FirstScreen = styled.section`
   padding-top: 210px;
   height: 700px;
@@ -40,5 +42,11 @@ export const FirstScreen = styled.section`
   p.text-subheading {
     margin-top: 20px;
     text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  @media ${device.tablet} {
+    h1 {
+      text-align: center;
+    }
   }
 `
