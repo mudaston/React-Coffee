@@ -1,18 +1,31 @@
 # :coffee: React Coffee
 
 
+<div>
+
 ![Framework](https://img.shields.io/badge/React-17.0.2-61DAFB?style=for-the-badge&logo=React)
 ![Library](https://img.shields.io/badge/React%20Router-6.2.1-CA4245?style=for-the-badge&logo=React%20Router)
 ![Bundler](https://img.shields.io/badge/Webpack-5.68.0-8DD6F9?style=for-the-badge&logo=Webpack)
 ![Library](https://img.shields.io/badge/Styled%20Components-5.3.3-DB7093?style=for-the-badge&logo=styled-components)
+
+</div>
+
+<div>
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/mudaston/React-Coffee?style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mudaston/React-coffee?style=for-the-badge)
 
+</div>
+
 This project is a kind of coffee shop app.
+
+<br/>
 
 ## Demo
 
 [https://mudaston.github.io/React-Coffee/](https://mudaston.github.io/React-Coffee/)
+
+<br/>
 
 ## Screenshots
 
@@ -35,33 +48,52 @@ This project is a kind of coffee shop app.
 />
 </p>
 
-## Installation
+## System Requirements
 
-clone the project to some directory
+- [git](https://git-scm.com/)
+- [NodeJS](https://nodejs.org/en/)
 
-```
-git clone https://github.com/mudaston/React-Coffee.git
-```
+<br/>
 
-install all dependencies by typing in the console
+## Run Locally
 
-```
-npm i
-```
+Clone the project
 
-## Usage
-
-start project
-
-```
-npm start
+```bash
+  git clone https://github.com/mudaston/React-Coffee.git
 ```
 
-open in the browser
+Go to the project directory
 
+```bash
+  cd React-Coffee
 ```
-http://localhost:3000
+
+Install dependencies
+
+```bash
+  npm install
 ```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+Open in a browser
+
+```bash
+  http://localhost:3000
+```
+
+<br/>
+
+## Lessons Learned
+
+I learned how to create [SPA](https://en.wikipedia.org/wiki/Single-page_application) with the [React Router](https://reactrouter.com/) and how to create styles with the [Styled Components](https://styled-components.com/) libraries
+
+<br/>
 
 ## Additional
 
