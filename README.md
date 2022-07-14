@@ -23,7 +23,7 @@ This project is a kind of coffee shop app.
 
 ## Demo
 
-[https://mudaston.github.io/React-Coffee/](https://mudaston.github.io/React-Coffee/)
+[https://react-coffee-demo.herokuapp.com](https://react-coffee-demo.herokuapp.com)
 
 <br/>
 
