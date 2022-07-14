@@ -23,7 +23,7 @@ This project is a kind of coffee shop app.
 
 ## Demo
 
-[https://react-coffee-demo.herokuapp.com](https://react-coffee-demo.herokuapp.com)
+[https://react-coffee-demo.herokuapp.com](https://react-coffee-demo.herokuapp.com) You need to wait a bit while the page is loading.
 
 <br/>
 
