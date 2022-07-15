@@ -3,19 +3,30 @@
 
 <div>
 
-![Framework](https://img.shields.io/badge/React-17.0.2-61DAFB?style=for-the-badge&logo=React)
-![Library](https://img.shields.io/badge/React%20Router-6.2.1-CA4245?style=for-the-badge&logo=React%20Router)
-![Bundler](https://img.shields.io/badge/Webpack-5.68.0-8DD6F9?style=for-the-badge&logo=Webpack)
-![Library](https://img.shields.io/badge/Styled%20Components-5.3.3-DB7093?style=for-the-badge&logo=styled-components)
+<a href="https://reactjs.org" target="_blank">
+<img src="https://img.shields.io/badge/React-17.0.2-61DAFB?style=for-the-badge&logo=React">
+</a>
+
+<a href="https://reactrouter.com/" target="_blank">
+<img src="https://img.shields.io/badge/React%20Router-6.2.1-CA4245?style=for-the-badge&logo=React%20Router">
+</a>
+
+<a href="https://styled-components.com/" target="_blank">
+<img src="https://img.shields.io/badge/Styled%20Components-5.3.3-DB7093?style=for-the-badge&logo=styled-components">
+</a>
+
+<a href="https://webpack.js.org/" target="_blank">
+<img src="https://img.shields.io/badge/Webpack-5.68.0-8DD6F9?style=for-the-badge&logo=Webpack">
+</a>
 
 </div>
 
-<div>
+<p>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/mudaston/React-Coffee?style=for-the-badge)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mudaston/React-coffee?style=for-the-badge)
 
-</div>
+</p>
 
 This project is a kind of coffee shop app.
 
