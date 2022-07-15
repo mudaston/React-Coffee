@@ -15,6 +15,10 @@
 <img src="https://img.shields.io/badge/Styled%20Components-5.3.3-DB7093?style=for-the-badge&logo=styled-components">
 </a>
 
+<a href="https://prettier.io/" target="_blank">
+<img src="https://img.shields.io/badge/Prettier-2.7.1-F7B93E?style=for-the-badge&logo=Prettier">
+</a>
+
 <a href="https://webpack.js.org/" target="_blank">
 <img src="https://img.shields.io/badge/Webpack-5.68.0-8DD6F9?style=for-the-badge&logo=Webpack">
 </a>
