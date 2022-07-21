@@ -112,4 +112,4 @@ I learned how to create [SPA](https://en.wikipedia.org/wiki/Single-page_applicat
 
 ## Additional
 
-This project is just a test task. This is my first React project that I created a week after I started learning
+This is my first React project that I created on my own a week after I started learning.
