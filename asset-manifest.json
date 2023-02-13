@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/React-Coffee/static/css/main.3ea2ebf0.css",
+    "main.js": "/React-Coffee/static/js/main.7af57f2d.js",
+    "static/js/443.dc68adfb.chunk.js": "/React-Coffee/static/js/443.dc68adfb.chunk.js",
+    "static/js/246.47c60f94.chunk.js": "/React-Coffee/static/js/246.47c60f94.chunk.js",
+    "static/js/796.c39e3ca4.chunk.js": "/React-Coffee/static/js/796.c39e3ca4.chunk.js",
+    "static/js/617.d495a84c.chunk.js": "/React-Coffee/static/js/617.d495a84c.chunk.js",
+    "static/js/847.eacf13ce.chunk.js": "/React-Coffee/static/js/847.eacf13ce.chunk.js",
+    "static/media/for-your-pleasure-bg.jpg": "/React-Coffee/static/media/for-your-pleasure-bg.0f998c2cd62f4ce73f50.jpg",
+    "static/media/best-bg.jpg": "/React-Coffee/static/media/best-bg.942241ed771d8a50084c.jpg",
+    "static/media/Main_bg.jpg": "/React-Coffee/static/media/Main_bg.46c219f1c9184e3ee1a4.jpg",
+    "static/media/our-coffee-bg.jpg": "/React-Coffee/static/media/our-coffee-bg.f563b769f63428805d44.jpg",
+    "static/media/full-image.jpg": "/React-Coffee/static/media/full-image.7d67ed3308150eb170f4.jpg",
+    "static/media/our-coffee-woman.jpg": "/React-Coffee/static/media/our-coffee-woman.25963983e206b815e9ea.jpg",
+    "static/media/about-our-goods.jpg": "/React-Coffee/static/media/about-our-goods.16032dd441366dbaf444.jpg",
+    "static/media/2.jpg": "/React-Coffee/static/media/2.541fc7ed951848f9379c.jpg",
+    "static/media/3.jpg": "/React-Coffee/static/media/3.c45992a26cd5f9c00e1f.jpg",
+    "static/media/1.jpg": "/React-Coffee/static/media/1.5173b2c023182e4b0bc4.jpg",
+    "static/media/icomoon.svg?ngfgr8": "/React-Coffee/static/media/icomoon.a9c37192d05eb760aad4.svg",
+    "static/media/icomoon.eot?ngfgr8": "/React-Coffee/static/media/icomoon.15f9a94000b113393a4e.eot",
+    "static/media/icomoon.woff?ngfgr8": "/React-Coffee/static/media/icomoon.804ba53f73e8f6ac0237.woff",
+    "static/media/icomoon.ttf?ngfgr8": "/React-Coffee/static/media/icomoon.30772819f68ad83c4346.ttf",
+    "index.html": "/React-Coffee/index.html",
+    "main.3ea2ebf0.css.map": "/React-Coffee/static/css/main.3ea2ebf0.css.map",
+    "main.7af57f2d.js.map": "/React-Coffee/static/js/main.7af57f2d.js.map",
+    "443.dc68adfb.chunk.js.map": "/React-Coffee/static/js/443.dc68adfb.chunk.js.map",
+    "246.47c60f94.chunk.js.map": "/React-Coffee/static/js/246.47c60f94.chunk.js.map",
+    "796.c39e3ca4.chunk.js.map": "/React-Coffee/static/js/796.c39e3ca4.chunk.js.map",
+    "617.d495a84c.chunk.js.map": "/React-Coffee/static/js/617.d495a84c.chunk.js.map",
+    "847.eacf13ce.chunk.js.map": "/React-Coffee/static/js/847.eacf13ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ea2ebf0.css",
+    "static/js/main.7af57f2d.js"
+  ]
+}
